@@ -49,6 +49,7 @@ public class MainWorker extends UntypedActor {
         busy = false;
         count = 0;
         sumById.clear();
+        workFilePath = null;
     }
 
     private void doWork(ActorRef workers) throws IOException {
